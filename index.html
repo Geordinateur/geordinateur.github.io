@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Georges GRIGNARD - Développeur web</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -158,6 +158,9 @@ ul {
 .seven {
 	background: linear-gradient(to right, #efb935 70%, white 30%);
 }
+.six {
+	background: linear-gradient(to right, #efb935 60%, white 40%);
+}
 .five{
 	background: linear-gradient(to right, #efb935 50%, white 50%);
 }
@@ -179,6 +182,7 @@ hr {
 
 .interest,.interest>* {
 	width: 100%;
+	display: flex;
 }
 .interest td {
 	width: 20%; 
@@ -198,6 +202,30 @@ hr {
 	border-radius: 10px;
 	padding: 10px;
 }
+.icon-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 30px;
+}
+
+.icon-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 10px;
+	width: 45%; /* Pour avoir deux colonnes */
+}
+
+.icon-item img {
+	width: 40px; /* Ajuste la taille des icônes selon tes besoins */
+	height: 40px;
+}
+
+.icon-item p {
+	margin-top: 15px;
+	text-align: center;
+}
 		</style>
 	</head>
 
@@ -205,15 +233,15 @@ hr {
 		<div class="container">
 			<header>
 				<img class="avatar" src="images/avatar_2.jpg"></img>
-				<h1>Développeur web</h1>
-				<h2>Recherche contrat de professionnalisation.</h2>
+				<h1>Administrateur Linux</h1>
+				<h2>Recherche le contrat de mes rêves <3</h2>
 				<h3 class="hheader"><ul>
-						<li><a href="mailto:georges-grignard@ik.me">georges-grignard@ik.me</a></li>
-						<li><a href="tel:+33673142635">06 73 14 26 35</a></li>
-						<li>34 ans</li>
-						<li>La-Chapelle-sur-Erdre</li>
-						<li>Permis B</li>
-					</ul></h3>
+					<li><a href="mailto:georges-grignard@ik.me">georges-grignard@ik.me</a></li>
+					<li><a href="tel:+33673142635">06 73 14 26 35</a></li>
+					<li>36 ans</li>
+					<li>La-Chapelle-sur-Erdre 44240</li>
+					<li>Permis B</li>
+				</ul></h3>
 				<ul class="fa-ul reseaux">
 					<a href="https://www.linkedin.com/in/georges-grignard" target="_blank"><li><i class="fab fa-linkedin fa-2x"></i></li></a>
 					<a href="https://github.com/Geordinateur" target="_blank"><li><i class="fab fa-github fa-2x"></i></span></li></a>
@@ -224,49 +252,51 @@ hr {
 				<hr></hr>
 				<ul class="ul-aside">
 					<li>
-						HTML 5 - CSS 3
-						<div class="note nine"></div>
-					</li>
-					<li>
 						JavaScript
 						<div class="note seven"></div>
 					</li>
 					<li>
-						SQL - PHP
-						<div class="note four"></div>
+						PHP / Bash / SQL
+						<div class="note six"></div>
+					</li>
+					<li>
+						C# / Java
+						<div class="note five"></div>
 					</li>
 				</ul><br>
-				<h3>CMS</h3>
+				<h3>Langues</h3>
 				<hr></hr>
 				<ul>
-					<li>WordPress<div class="note five"></div>
+					<li>Anglais<div class="note four"></div>
 					</li>
 				</ul>
 				<br>
-				<h3>Logiciels et Outils</h3>
-				<hr></hr>
-				<div class="apps-and-tools">
-					<img src="images/vim_94609.png" class="icons app" title="VIm">
-					<img src="images/visualstudiocode_93981.png" class="icons app" title="Visual Studio Code">
-					<img src="images/vuejs_original_logo_icon_146304.png" class="icon app" title="VueJS">
-					<img src="images/nodejs.png" class="icon app" title="NodeJS">
-					<img src="images/mysqlworkbench_93532.png" class="icons app" title="MySQL">
-					<img src="images/file_type_git_icon_130581.png" class="icon app" title="Git"><br>
-					<img src="images/linux_original_logo_icon_146433.png" class="icon app" title="Linux">
-					<img src="images/The_GIMP_icon_-_gnome.svg.png" class="icon app" title="GIMP">
-					<img src="images/apache.png" class="icon app" title="Apache">
-				</div>
 				<!--
-					<h4>Editeur de texte</h4>
-					<h4><img src="https://cdn.icon-icons.com/icons2/1381/PNG/512/vim_94609.png" class="icons app" alt="VIm">
-					<img src="https://cdn.icon-icons.com/icons2/1381/PNG/512/visualstudiocode_93981.png" class="icons app" alt="Visual Studio Code"></h4><br>
-					<h4>SGBDR</h4>
-					<h4><img src="https://cdn.icon-icons.com/icons2/512/PNG/512/dbs-mysql_icon-icons.com_50909.png" class="icons app big"></h4>
-					<h4>Framworks</h4>
-					<h4><img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/vuejs_original_logo_icon_146304.png" class="icon app" alt="VueJS"></h4>
-					<h4>SEO: </h4>GoAccess - Google Analytics
-					<h4>Versioning: </h4>Git
-				-->
+<h3>Logiciels et Outils</h3>
+<hr></hr>
+<div class="apps-and-tools">
+<img src="images/vim_94609.png" class="icons app" title="VIm">
+<img src="images/visualstudiocode_93981.png" class="icons app" title="Visual Studio Code">
+<img src="images/vuejs_original_logo_icon_146304.png" class="icon app" title="VueJS">
+<img src="images/nodejs.png" class="icon app" title="NodeJS">
+<img src="images/mysqlworkbench_93532.png" class="icons app" title="MySQL">
+<img src="images/file_type_git_icon_130581.png" class="icon app" title="Git"><br>
+<img src="images/linux_original_logo_icon_146433.png" class="icon app" title="Linux">
+<img src="images/The_GIMP_icon_-_gnome.svg.png" class="icon app" title="GIMP">
+<img src="images/apache.png" class="icon app" title="Apache">
+</div>
+-->
+				<!--
+<h4>Editeur de texte</h4>
+<h4><img src="https://cdn.icon-icons.com/icons2/1381/PNG/512/vim_94609.png" class="icons app" alt="VIm">
+<img src="https://cdn.icon-icons.com/icons2/1381/PNG/512/visualstudiocode_93981.png" class="icons app" alt="Visual Studio Code"></h4><br>
+<h4>SGBDR</h4>
+<h4><img src="https://cdn.icon-icons.com/icons2/512/PNG/512/dbs-mysql_icon-icons.com_50909.png" class="icons app big"></h4>
+<h4>Framworks</h4>
+<h4><img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/vuejs_original_logo_icon_146304.png" class="icon app" alt="VueJS"></h4>
+<h4>SEO: </h4>GoAccess - Google Analytics
+<h4>Versioning: </h4>Git
+-->
 				<br>
 				<h3>Qualités personnelles</h3>
 				<hr></hr>
@@ -275,34 +305,78 @@ hr {
 					<li>Loyal</li>
 					<li>Esprit d'équipe</li>
 					<li>Appliqué</li>
-					<li>Débrouillard</li>
+					<li>Autonome</li>
 				</ul>
 				<br>
 				<h3>Références - Sites web</h3>
 				<hr></hr>
 				<ul>
-					<li><a href="https://georges-grignard.fr" target="_blank">Site personnel</a></li>
 					<li><a href="https://rugbyerdre13.wordpress.com/" target="_blank">Les Dragons de l'Erdre</a></li>
-					<li><a href="https://www.codingame.com/profile/37bb1f261c99b7e77ddd56c9c09f49766059064" target="_blank">CodinGame</a></li>
+					<li>[ ... ]</li>
+					<li>[ ... ]</li>
 				</ul>
+				<br>
+				<h3>Centres d'intérêt</h3>
+				<hr></hr>
+				<div class="icon-grid">
+					<div class="icon-item">
+						<i class="fas fa-terminal fa-3x"></i>
+						<p>Linux</p>
+					</div>
+					<div class="icon-item">
+						<i class="fas fa-code fa-3x"></i>
+						<p>Projet Open-Source</p>
+					</div>
+					<div class="icon-item">
+						<i class="fas fa-football-ball fa-3x"></i>
+						<p>Sport</p>
+					</div>
+					<div class="icon-item">
+						<i class="fas fa-campground fa-3x"></i>
+						<p>Randonnee</p>
+					</div>
+					<div class="icon-item">
+						<i class="fas fa-film fa-3x"></i>
+						<p>Cinemas</p>
+					</div>
+				</div>
 			</aside>
 			<main>
-				<h2>Je recherche une entreprise pour m'accueillir de 4 à 8 semaines en entreprise pour 2 semaines à l'école ENI sur une durée de 24 mois afin de préparer le diplôme BAC+4 Concepteur développeur d'applications.</h2><br>
+				<h2>Passionné par les systèmes Linux et le scripting, je suis prêt à mettre mes compétences au service d'une équipe dynamique dès décembre 2024.</h2><br>
 
 				<h3>Compétences</h3>
 				<hr></hr>
 				<ul>
-					<li><strong>Analyser les besoins et objectifs</strong> d'un client et <strong>les traduire techniquement</strong>.</li>
-					<li><strong>Réfléchir à l'ergonomie et veiller à l'adaptabilité d'une interface web</strong> afin d'optimiser l'expérience utlisateur.</li>
-					<li><strong>Créer et Intégrer une maquette</strong> dans le respect des bonnes pratiques.</li>
-					<li><strong>Travailler en équipe</strong> avec une méthodologie de gestion de projet adaptée.</li>
+					<!--
+<li><strong>Analyser les besoins et objectifs</strong> d'un client et <strong>les traduire techniquement</strong>.</li>
+<li><strong>Réfléchir à l'ergonomie et veiller à l'adaptabilité d'une interface web</strong> afin d'optimiser l'expérience utlisateur.</li>
+<li><strong>Créer et Intégrer une maquette</strong> dans le respect des bonnes pratiques.</li>
+<li><strong>Travailler en équipe</strong> avec une méthodologie de gestion de projet adaptée.</li>
+
+<li><strong>Concevoir une application</strong>, de la gestion de projet jusqu'a la livraison.</li>
+<li><strong>Mettre en place et administrer un SGBDR</strong>, de type MySQL, MariaDB, SQLServer, SQLite.</li>
+-->
+
+					<li><strong>Maintenir et administrer des environnements Linux</strong>, incluant installation, mise à jour, et gestion des services.</li>
+					<li><strong>Gérer et résoudre les incidents</strong> sur des services tels que SMTP, Syslog, OpenSSL, Apache, Nginx, et MySQL.</li>
+					<li><strong>Mettre en production de nouveaux services</strong> tout en assurant la qualité et la continuité des infrastructures.</li>
+					<li><strong>Automatiser les tâches administratives</strong> à l'aide de scripts Bash et outils comme Ansible.</li>
+					<li><strong>Assurer la sécurité et la performance des infrastructures</strong> par le patching, les mises à jour, et l'amélioration continue.</li>
+					<li><strong>Collaborer efficacement avec les équipes techniques</strong> pour le maintien en condition opérationnelle des plateformes Cloud.</li>
+					<li><strong>Participer à des périodes d'astreinte</strong> pour garantir la disponibilité des services critiques.</li>
+
+
 				</ul>
 				<br>
 				<h3>Formations</h3>
 				<hr></hr>
 				<table>
 					<tr>
-						<td class="date">2020 - 2021</td>
+						<td class="date">2024</td>
+						<td><strong><span class="title maybe">Concepteur developpeur d'application</span></strong> - Titre professionnel Niveau VI<br><i>ENI, Saint-Herblain</i></td>
+					</tr>
+					<tr>
+						<td class="date">2021</td>
 						<td><strong><span class="title">Développeur web</span> - Titre professionnel Niveau V</strong><br><i>OpenClassrooms, téléprésentiel</i>
 							<blockquote class="detail">7 projets on été effectués, du site vitrine, à un réseau social dynamique pour une entreprise, avec l'utilisation d'une <strong>base de données</strong>, <strong>environnement d'exécution</strong>, <strong>framework JavaScript</strong>, <strong>logiciel de versionning</strong></blockquote>
 						</td>
@@ -321,16 +395,17 @@ hr {
 				<hr></hr>
 				<table>
 					<tr>
+						<td class="date">2022 - 2024</td>
+						<td><span class="title"><strong>Malakoff Humanis</strong></span> - Charge de developpement<br><i>Orleans</i>
+							<blockquote class="detail">7 projets on été effectués, du site vitrine, à un réseau social dynamique pour une entreprise, avec l'utilisation d'une <strong>base de données</strong>, <strong>environnement d'exécution</strong>, <strong>framework JavaScript</strong>, <strong>logiciel de versionning</strong></blockquote></td>
+					</tr>
+					<tr>
 						<td class="date">2018 - 2020</td>
-						<td><span class="title">Colas</span> - Professionel Enrobés<br><i>Rezé</i></td>
+						<td><span class="title">Colas</span> - Ouvrier VRD<br><i>Rezé</i></td>
 					</tr>
 					<tr>
 						<td class="date">2014 - 2017</td>
 						<td><span class="title">Sade</span> - Ouvrier VRD<br><i>Saint-Herblain</i></td>
-					</tr>
-					<tr>
-						<td class="date">2013 - 2013</td>
-						<td><span class="title">Blanchard TP environnement</span> - Apprentis<br><i>Basse-Goulaine</i></td>
 					</tr>
 					<tr>
 						<td class="date">2011 - 2012</td>
@@ -338,23 +413,6 @@ hr {
 					</tr>
 				</table>
 				<br>
-				<h3>Centres d'intérêt</h3>
-				<hr></hr>
-				<table class="interest">
-					<tr>
-						<td><i class="fas fa-terminal fa-3x"></i></td>
-						<td><i class="fas fa-code fa-3x"></i></td>
-						<td><i class="fas fa-football-ball fa-3x"></i></td>
-						<td><i class="fas fa-campground fa-3x"></i></td>
-						<td><i class="fas fa-film fa-3x"></i></td>
-					</tr><tr>
-						<td>Programmation Linux</td>
-						<td>Coding Web</td>
-						<td>Sport / e-Sport</td>
-						<td>Randonnée</td>
-						<td>Cinémas</td>
-					</tr>
-				</table>
 			</main>
 		</div>
 	</body>
