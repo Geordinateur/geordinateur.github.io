@@ -1,0 +1,46 @@
+body {
+  max-width: 50%;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  height: 100vh;
+
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings:
+    "wdth" 100;
+
+
+
+}
+
+.content { 
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.title {
+  background-color: lightgreen;
+  width: 100%;
+}
+
+.row-padding {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: lightpink;
+}
+
+.third {
+  margin: 20px;
+}
+
+.third a {
+  border: solid 3px black;
+  padding: 20px;
+  background-color: lightgrey;
+}
