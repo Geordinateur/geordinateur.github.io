@@ -82,6 +82,7 @@ a:hover {
   padding: 1em;
   align-items: center;
   gap: 1em;
+  box-shadow: 3px 3px var(--border-color);
 }
 
 .menu-button>img {
@@ -96,5 +97,14 @@ a:hover {
   .menu-button {
     width: auto;
     padding-right: 2em;
+    box-shadow: none;
+  }
+
+  a {
+    transition: 0.2s;
+  }
+
+  a.menu-button:hover {
+    box-shadow: 3px 3px var(--border-color);
   }
 }
