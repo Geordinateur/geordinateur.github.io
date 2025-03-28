@@ -20,11 +20,8 @@
 body {
   /* max-width: 50%; */
   margin: auto;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  background-color: var(--background-color);
   height: 100vh;
+  background-color: var(--background-color);
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-variation-settings:
@@ -79,9 +76,9 @@ a:hover {
 
 .menu-button {
   border: solid 3px black;
-  padding: 20px;
   background-color: var(--foreground-transparent-color);
   width: 100%;
   display: block;
   border: solid 3px var(--border-color);
+  height: 3em;
 }
