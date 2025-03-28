@@ -46,6 +46,7 @@ a:hover {
   align-self: center;
   justify-content: center;
   gap: 2em;
+  width: 50%;
 }
 
 .title {
