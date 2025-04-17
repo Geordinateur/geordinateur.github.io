@@ -185,7 +185,7 @@ aside .contact .title, aside .contact .hr-title {
     flex: 2 1 300px;
   }
   aside {
-    flex: 1 1 300px;
+    flex: 1 1 150px;
   }
   .coordonnees {
     display: flex;
