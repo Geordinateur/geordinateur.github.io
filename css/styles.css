@@ -26,6 +26,7 @@ h1, h2, h3, h4 {
 
 h1 { 
   font-size: 3em;
+  text-transform: uppercase;
 }
 
 h2 { 
@@ -44,6 +45,10 @@ h4 {
   font-weight: bold;
 }
 
+a {
+  color: darkred;
+}
+
 table { 
   width: 100%;
   border-spacing: 0;
@@ -60,6 +65,10 @@ table tr td {
   border: none;
 }
 .competences table tr td {
+}
+.competences legend {
+  text-align: center;
+  font-style: italic;
 }
 td.date {
   text-align: right;
@@ -84,26 +93,26 @@ main {
 /* NOTATION */
 .note {
 	letter-spacing: 10px;
-	border: solid 1px black;
+	border: solid 0px black;
 	height: 8px;
 	margin-right: 40px;
 	width: 100%;
 	border-radius: 60px;
 }
 .one {
-	background: linear-gradient(to right, #efb935 20%, white 20%);
+	background: linear-gradient(to right, darkred 20%, lightgrey 20%);
 }
 .two {
-	background: linear-gradient(to right, #efb935 40%, white 40%);
+	background: linear-gradient(to right, darkred 40%, lightgrey 40%);
 }
 .tree {
-	background: linear-gradient(to right, #efb935 60%, white 60%);
+	background: linear-gradient(to right, darkred 60%, lightgrey 60%);
 }
 .four {
-	background: linear-gradient(to right, #efb935 80%, white 80%);
+	background: linear-gradient(to right, darkred 80%, lightgrey 80%);
 }
 .five{
-	background: linear-gradient(to right, #efb935 100%, white 0);
+	background: linear-gradient(to right, darkred 100%, lightgrey 0);
 }
 
 .header-photo {
@@ -143,7 +152,8 @@ aside .contact .title, aside .contact .hr-title {
 .title {
   margin: 0.5em 0;
   text-transform: uppercase;
-  background-color: lightgreen;
+  border-bottom: solid 2px lightgrey;
+  padding-bottom: 0.5em;
 }
 
 .hr-title {
