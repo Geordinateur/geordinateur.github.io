@@ -39,6 +39,11 @@ h3 {
   font-size: 1.5em;
 }
 
+h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 table { 
   width: 100%;
   border-spacing: 0;
@@ -58,6 +63,10 @@ table tr td {
 }
 td.date {
   text-align: right;
+}
+
+.formation td {
+  padding-left: 1em;
 }
 
 main {
@@ -141,6 +150,17 @@ aside .contact .title, aside .contact .hr-title {
   display: none;
 }
 
+.formation .date {
+  vertical-align: top;
+}
+
+.formation .spacing {
+  height: 1em;
+}
+
+.formation table td:last-of-type {
+}
+
 @media only screen and (min-width: 600px) {
   main {
     margin: 2em auto;
@@ -149,7 +169,7 @@ aside .contact .title, aside .contact .hr-title {
   }
   .header-photo {
     float: left;
-    margin: 1em 2em;
+    margin: 1em 3em 1em 0;
   }
   section { 
     flex: 2 1 300px;
@@ -162,5 +182,8 @@ aside .contact .title, aside .contact .hr-title {
     flex-flow: column nowrap;
     width: 100%;
     border-spacing: 0.3em;
+  }
+  .competences p {
+    margin: 0;
   }
 }
