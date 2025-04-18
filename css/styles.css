@@ -90,6 +90,11 @@ main {
   max-height: 2em;
   z-index: -10;
 }
+.langues img {
+  max-height: 1em;
+  padding-right: 0.5em;
+  vertical-align: top;
+}
 
 /* NOTATION */
 .note {
@@ -218,6 +223,7 @@ aside .contact .title {
   }
   .autres {
     padding-top: 2em;
+    padding-bottom: 1em;
     text-align: center;
   }
 }
