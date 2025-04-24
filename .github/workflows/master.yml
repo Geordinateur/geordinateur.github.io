@@ -11,5 +11,14 @@ jobs:
       - name: Cloner le repo
         uses: actions/checkout@v3
 
+      - name: Copier les fichiers via SCP
+        uses: appleboy/scp-action@v0.1.4
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "./index.html"
+          target: "/var/www/html/"
+
       - name: Afficher un message
         run: echo "Hello, CI/CD depuis GitHub Actions!"
