@@ -18,7 +18,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: "bonjour"
           port: ${{ secrets.PORT }}
-          source: "index.html,css/"
+          source: "index.html"
           target: "/var/www/html/" 
 
       - name: Afficher un message
