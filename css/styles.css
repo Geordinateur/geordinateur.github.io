@@ -55,6 +55,16 @@ table {
   border-spacing: 0;
   padding: 0.5em;
 }
+
+.title-exp {
+  background-color: red;
+  text-transform: uppercase;
+  text-align: center;
+  align-items: center;
+  display: none;
+}
+
+
 table tr th {
   text-align: left;
   font-weight: bold;
