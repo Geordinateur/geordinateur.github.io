@@ -197,7 +197,8 @@ aside .contact .title {
 @media only screen and (min-width: 600px) {
   main {
     margin: 2em auto;
-    max-width: 794px;
+    /* max-width: 794px; */
+    max-width: 944px;
     gap: 1em 2em;
   }
   .header-photo {
