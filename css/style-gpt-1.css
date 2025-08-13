@@ -101,6 +101,9 @@ body {
 }
 
 @media (max-width: 600px) {
+  body{
+    align-items: stretch !important;
+  }
   .content {
     max-width: 98vw;
     padding: 22px 6vw 20px 6vw;
