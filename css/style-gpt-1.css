@@ -85,7 +85,19 @@ body {
   text-decoration: none;
 }
 
-.title p {
+.menu-button.disabled,
+.menu-button[disabled], 
+.menu-button.disabled:visited, 
+.menu-button.disabled:focus, 
+.menu-button.disabled:hover {
+  pointer-events: none;
+  opacity: 0.58;
+  background: linear-gradient(100deg, #e2eafc 0%, #d1d5db 100%);
+  color: #8a8a8a;
+  box-shadow: none;
+  filter: grayscale(0.35);
+  cursor: not-allowed;
+  text-decoration: none;
 }
 
 @media (max-width: 600px) {
