@@ -104,7 +104,7 @@ body {
   .content {
     max-width: 98vw;
     padding: 22px 6vw 20px 6vw;
-    border-radius: 10px;
+    border-radius: 0;
   }
   .title h1 {
     font-size: 1.5em;
