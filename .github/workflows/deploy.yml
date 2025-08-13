@@ -12,14 +12,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-
-      - name: Copy generated files to server via SCP
+      - name: Prepare SSH key
         env:
           SSH_KEY: ${{ secrets.SSH_KEY }}
+        run: |
+          echo "$SSH_KEY" > key.pem
+          chmod 600 key.pem
+
+      - name: Deploy files to server via rsync
+        env:
           SERVER_HOST: ${{ secrets.SERVER_HOST }}
           SERVER_USER: ${{ secrets.SERVER_USER }}
         run: |
-          echo "$SSH_KEY" > key.pem
-          ls -all .
-          chmod 600 key.pem
-          scp -o StrictHostKeyChecking=no -i key.pem index.html -r css images ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/var/www/index/
+          rsync -avz -e "ssh -o StrictHostKeyChecking=no -i key.pem" index.html css images ${{ env.SERVER_USER }}@${{ env.SERVER_HOST }}:/var/www/index/
