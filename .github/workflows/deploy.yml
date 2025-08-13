@@ -1,0 +1,25 @@
+name: Deploy index to georges-grignard.fr.nf
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Copy files to server via SCP
+        env:
+          SSH_KEY: ${{ secrets.SSH_KEY }}
+          SERVER_HOST: ${{ secrets.SERVER_HOST }}
+          SERVER_USER: ${{ secrets.SERVER_USER }}
+        run: |
+          echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+          echo "$SSH_KEY" > key.pem
+          chmod 600 key.pem
+          scp -o StrictHostKeyChecking=no -i * $SERVER_USER@$SERVER_HOST:/var/www/index/
+        run: echo "🍏 This job's status is ${{ job.status }}."
