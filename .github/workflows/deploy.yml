@@ -1,8 +1,8 @@
-name: Build and Deploy Resume
+name: Deploy index to my server
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   workflow_dispatch:
 
 jobs:
