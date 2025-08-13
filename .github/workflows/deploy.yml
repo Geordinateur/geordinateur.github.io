@@ -1,4 +1,4 @@
-name: Deploy index to georges-grignard.fr.nf
+name: Build and Deploy Resume
 
 on:
   push:
@@ -12,14 +12,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Copy files to server via SCP
+
+      - name: Copy generated files to server via SCP
         env:
           SSH_KEY: ${{ secrets.SSH_KEY }}
           SERVER_HOST: ${{ secrets.SERVER_HOST }}
           SERVER_USER: ${{ secrets.SERVER_USER }}
         run: |
-          echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
           echo "$SSH_KEY" > key.pem
+          ls -all .
           chmod 600 key.pem
-          scp -o StrictHostKeyChecking=no -i * $SERVER_USER@$SERVER_HOST:/var/www/index/
-        run: echo "🍏 This job's status is ${{ job.status }}."
+          scp -o StrictHostKeyChecking=no -i key.pem index.html -r css images ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/var/www/index/
