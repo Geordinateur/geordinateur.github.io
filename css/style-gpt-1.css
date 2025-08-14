@@ -103,8 +103,12 @@ body {
 .social-links {
   display: flex;
   gap: 14px;
-  margin-top: 12px;
+  /* margin-top: 12px; */
   justify-content: center;
+}
+
+.social-links > .menu-button {
+  width: 100%;
 }
 
 @media (max-width: 600px) {
@@ -125,7 +129,7 @@ body {
   }
   .social-links {
     justify-content: center;
-    margin-top: 18px;
+    /* margin-top: 18px; */
     gap: 8px;
   }
 }
