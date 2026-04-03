@@ -1,0 +1,111 @@
+:root{
+  --background-color: #1A1B26;
+  --background-transparent-color: #1A1B2680;
+  --foreground-color: #2F3344;
+  --foreground-transparent-color: #2F334480;
+  --light-blue-color: #C0CAF5;
+  --border-color: #15151E;
+  --white-color: #FFFFFF;
+  --yellow-color: #F8CD7A;
+  --cyan-color: #89DDFF;
+  --purple-color: #BB9AF7;
+  --green-color: #9ECE6A;
+  --red-color: #DB4B4B;
+  --orange-color: #ff9e64;
+  --pink-color: #ba3c97;
+  --cyan-green-color: #2ac0c3;
+  --green-cyan-color: #73d7a8;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "width" 100;
+  color: white-color;
+}
+
+a {
+  color: var(--white-color);
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: var(--white-color);
+  background-color: var(--foreground-color);
+  text-shadow: 0px 0px 3px var(--white-color);
+}
+
+.content { 
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 2em;
+  display: flex;
+  flex-flow: column wrap;
+  align-self: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.title {
+  color: var(--white-color);
+  text-shadow: 0px 0px 3px var(--white-color);
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1em;
+}
+
+.row-padding {
+  flex-direction: row;
+}
+
+.column-padding {
+  flex-direction: column;
+}
+
+.menu-button {
+  border: solid 3px black;
+  background-color: var(--foreground-transparent-color);
+  width: 100%;
+  display: flex;
+  border: solid 3px var(--border-color);
+  height: auto;
+  padding: 1em;
+  align-items: center;
+  gap: 1em;
+  box-shadow: 3px 3px var(--border-color);
+}
+
+.menu-button>img {
+  max-width: 60px;
+  max-height: 50px;
+}
+
+@media only screen and (min-width: 600px) {
+  .content {
+    width: 50%;
+    position: relative;
+  }
+  .menu-button {
+    width: auto;
+    padding-right: 2em;
+    box-shadow: none;
+  }
+
+  a {
+    transition: 0.2s;
+  }
+
+  a.menu-button:hover {
+    box-shadow: 3px 3px var(--border-color);
+  }
+}
