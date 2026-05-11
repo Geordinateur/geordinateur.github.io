@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </head>
   <body>
     <header>
@@ -22,16 +22,46 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="">Blog</a></li>
-          <li><a href="">Projects</a></li>
+          <li><a href="projects.html">Projects</a></li>
           <li><a href="">CV</a></li>
-          <li class="active"><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
       </div>
     </header>
     <main>
+      <div class="containter">
+        <div class="instantanee-social">
+          <h2>Messagerie instantanée et réseaux sociaux</h2>
+          <hr>
+          <div></div>
+        </div>
+        <div class="email">
+          <h2>M'envoyer un email</h2>
+          <hr>
+          <script>
+          function sendEmail() {
+            Email.send({
+              Host: "smtp.yourisp.com",
+              Username: "username",
+              Password: "password",
+              To: 'recipient@example.com',
+              From: "sender@example.com",
+              Subject: "Test Email",
+              Body: "This is a test email sent using SMTP.js"
+            })
+              .then(function (message) {
+                alert("Mail sent successfully") // Alert message on successful email delivery
+              });
+          }
+          </script>
+          <button onclick="sendEmail()">Send Email</button> <!-- Button to trigger email sending -->
+
+        </div>
+      </div>
     </main>
     <footer>
       Copyright (c) 2026 Georges Grignard <!-- — Sauf mention contraire, le contenu de ce site est publié sous licence cc by-sa 3.0 -->
     </footer>
+  </body>
 </html>
 
